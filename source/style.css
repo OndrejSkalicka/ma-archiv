@@ -1,0 +1,19 @@
+body
+{
+	font-family: arial ce, arial, helvetica ce, helvetica;
+	font-size: 12px;
+	background-color: #AEB7FF;
+}
+#outer {
+	text-align: center;
+}
+#inner {
+	width: 961px;
+	margin: auto;
+	padding: 0px;
+	text-align: left;
+}
+
+
+
+

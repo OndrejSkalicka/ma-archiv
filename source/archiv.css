@@ -1,0 +1,414 @@
+/* BARVY:
+black - ramecky nahore
+#AEB7FF - pozadi stranky (light blue)
+#191970 - ramecky (dark blue)
+#8081FF - pozadi inputu (blue)
+ */
+
+/* global */
+.clear {
+	clear: both;
+	width: 0px;
+	height: 0px;
+	font-size: 0px;
+	padding: 0px;
+	margin: 0px;
+	overflow: none;
+}
+form {
+	margin: 0px;
+}
+/* archi_top */
+#archiv_top {
+	width: 960px;
+	height: 90px;
+}
+#archiv_top .archivar {
+	float: left;
+	width: 810px;
+}
+#archiv_top .archivar .right {
+	text-align: right;
+}
+#archiv_top .archivar td, #archiv_top .archivar tr, #archiv_top .archivar table {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+	vertical-align: top;
+}
+#archiv_top .login {
+	float: left;
+	width: 150px;
+	height: 90px;
+	overflow: hidden;
+	font-size: 10px;
+	padding: 0px;
+}
+#archiv_top .login a, #archiv_top .login a:visited, #archiv_top .login a:active {
+	color: Blue;
+	text-decoration: underline;
+}
+#archiv_top .archiv_login_table {
+	padding: 0px;
+}
+#archiv_top .archiv_login_table td {
+	text-align: center; 
+}
+#archiv_top .login input {
+	border: 1px solid #191970;
+	height: 16px;
+	font-size: 10px;
+	width: 100px;
+}
+
+/* middle */
+#archiv_main .right {
+	text-align: right;
+}
+#archiv_main a, #archiv_main a:active, #archiv_main a:visited {
+	color: Blue;
+}
+
+#archiv_main .error {
+	color: Red;
+}
+#archiv_main .ok {
+	color: Green;
+}
+#archiv_main a img {
+	border: none;
+}
+/* bottom */
+#archiv_patka {
+	margin-top: 20px;
+	width: 960px;
+	height: 16px;
+	vertical-align: middle;
+	text-align: center;
+	background-color: #9CA6B4;
+}
+/* menu */
+#archiv_menu {
+	border-left: 1px solid black;
+	height: 25px;
+	width: 960px;_width: 960px;
+}
+#archiv_menu .archiv_polozka {
+	float: left;
+	height: 23px;_height: 25px;/* IE border */
+	/*width: 125px;*/
+	width: 159px;_width: 158px;/* IE by melo mit 161, ale bohuzel to kupodivu nefunguje jak ma */
+	/*width: 136px;_width: 135px; */
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	overflow: hidden;
+}
+#archiv_menu .archiv_polozka a {
+	background-image: url(img/menu.gif);
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+	display: block;
+	margin: 0; padding:0;
+	width:100%; height:100%;
+ 	color: black;
+	text-decoration: none;
+	cursor: default;
+}
+#archiv_menu .archiv_polozka span {
+	display: block;
+	margin:0; padding: 5px 0 0 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-align:center;
+}
+#archiv_menu .archiv_polozka .selected {
+	font-weight: bold;
+	color: #191970;
+}
+#archiv_menu .archiv_polozka a:hover, #archiv_menu .archiv_polozka a span.selected:hover {
+	background-position: 0px -25px;
+}
+#archiv_menu .archiv_polozka a:active {
+	color: black;
+}
+/* main */
+#archiv_main {
+	padding: 20px 0px 0px 0px;
+}
+#archiv_main .archiv_nadpis {
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+/* pridavani */
+#archiv_pridavani {
+}
+#archiv_pridavani td {
+/*	vertical-align: top;*/
+}
+#archiv_pridavani .vstup {
+	display: block;
+}
+#archiv_pridavani .nahled {
+	width: 700px;
+	overflow: auto;
+}
+	/* siroka pole (vstupni textarea / nahledy) */
+#archiv_pridavani .nahled, #archiv_pridavani .vstup {
+	width: 700px;
+	height: 70px;
+}
+	/* uzka pole */
+#archiv_pridavani .malyNahled, #archiv_pridavani .malyVstup {
+	width: 200px;
+	display: block;
+}
+	/* barvy pridavani */
+#archiv_pridavani .malyNahled, #archiv_pridavani .nahled, #archiv_pridavani .vstup, #archiv_pridavani .malyVstup {
+	border: 1px solid #191970;
+	background-color: #8081FF;
+	margin: 10px;
+}
+#archiv_pridavani .next, #archiv_pridavani .back {
+	font-weight: bold;
+	width: 75px;
+}
+#archiv_pridavani .next {
+	color: Green;
+}
+#archiv_pridavani .back {
+	color: Red;
+}
+#archiv_pridavani .povinne {
+	color: Red;
+	font-weight: bold;
+}
+/* hledani */
+#archiv_hledani {
+	
+}
+#archiv_hledani .checkbox {
+	border: none;
+}
+#archiv_hledani .typ {
+	width: 45px;
+}
+#archiv_hledani .select, #archiv_hledani .edit {
+	width: 150px;
+}
+#archiv_hledani .select, #archiv_hledani .edit, #archiv_hledani .typ, #archiv_hledani .submit  {
+	border: 1px solid #191970;
+}
+#archiv_hledani .select, #archiv_hledani .edit, #archiv_hledani .typ  {
+	background-color: #8081FF;
+}
+#archiv_vlastni .searchResult, #archiv_hledani .searchResult {
+/*	border-top: 1px solid #191970;
+	border-left: 1px solid #191970;*/
+	background-color: #191970;
+}
+#archiv_vlastni .searchResult td, #archiv_hledani .searchResult td {
+	/*border-right: 1px solid #191970;
+	border-bottom: 1px solid #191970;
+	padding: 1px 3px 0px 3px;*/
+	background-color: #AEB7FF;
+	padding: 2px;
+/*	font-size: 12px;*/
+}
+
+/* vlastni */
+#archiv_vlastni {
+}
+#archiv_vlastni .vstup {
+	/* textarea */
+	display: block;
+	width: 700px;
+	height: 100px;
+}
+#archiv_vlastni .malyVstup {
+	width: 200px;
+	display: block;
+}
+#archiv_vlastni .vstup, #archiv_vlastni .malyVstup {
+	border: 1px solid #191970;
+	background-color: #8081FF;
+	margin: 10px;
+}
+#archiv_vlastni .next, #archiv_vlastni .back {
+	font-weight: bold;
+	width: 75px;
+}
+#archiv_vlastni .next {
+	color: Green;
+}
+#archiv_vlastni .back {
+	color: Red;
+}
+#archiv_vlastni .submit  {
+	border: 1px solid #191970;
+}
+/* vykresleni branky */
+#archiv_detail {
+	
+}
+
+/*#archiv_detail .branka {
+	background-color: #8081FF;
+	border: 1px solid #191970;
+	padding: 0px;
+	margin: 0px;
+	width: 760px;
+	width: 960px;
+	color: silver;
+}
+*/
+#archiv_detail .vyhral, #archiv_simul .vyhral {
+	color: green;
+}
+#archiv_detail .remiza, #archiv_simul .remiza {
+	color: Black;
+}
+#archiv_detail .prohral, #archiv_simul .prohral {
+	color: Red;
+}
+#archiv_detail .utok, #archiv_detail .obrana {
+	margin-bottom: 15px;
+}
+#archiv_detail .utok {
+	color: #FFFF00;
+}
+#archiv_detail .obrana {
+	color: white;
+}
+#archiv_detail .cs {
+	font-style: italic;
+}
+#archiv_detail .title {
+	width: 100%;
+	font-size: 16px;
+	font-weight: bold;
+}
+/* nastaveni */
+#archiv_nastaveni {
+
+}
+#archiv_nastaveni table, #archiv_nastaveni td, #archiv_nastaveni tr {
+	margin: 0px;
+	padding: 0px;
+	border: none;
+}
+#archiv_nastaveni td {
+	vertical-align: top;
+	padding: 0px 7px 0px 0px;
+}
+#archiv_nastaveni .submit {
+	border: 1px solid #191970;
+}
+/* registrace */
+#archiv_registrace {
+	
+}
+#archiv_registrace td {
+	vertical-align: top;
+}
+#archiv_registrace .input {
+	width: 150px;
+	border: 1px solid #191970;
+	background-color: #8081FF;
+}
+#archiv_registrace .submit {
+	width: 100px;
+	border: 1px solid #191970;
+	
+}
+#archiv_registrace .podminky {
+	width: 800px;
+	height: 150px;
+	border: 1px solid #191970;
+	background-color: #8081FF;
+	overflow: auto;
+}
+/* help */
+#archiv_help {
+	text-align: center;
+}
+#archiv_help .step {
+	margin-top: 15px;
+	text-align: center;
+}
+#archiv_help .step img {
+	display: block;
+	margin: auto;
+	margin-top: 15px;
+}
+/* stats */
+#archiv_statistiky .head {
+	font-size: 16px;
+	font-weight: bold;
+}
+#archiv_statistiky .mainT td {
+	vertical-align: top;
+	padding: 10px;
+}
+#archiv_statistiky .bordered {
+	border-collapse: collapse;
+}
+#archiv_statistiky .bordered td {
+	border: 1px solid #191970;	
+	padding: 2px 5px 2px 5px;
+	margin: 0px;
+}
+#archiv_statistiky .doubleTop td {
+	border-top: 2px solid #191970;
+}
+#archiv_statistiky .doubleBot td {
+	border-bottom: 2px solid #191970;
+}
+#archiv_statistiky .doubleLeft {
+	border-left: 2px solid #191970;
+}
+#archiv_statistiky .bold td {
+	font-weight: bold;
+}
+#archiv_statistiky .italic td {
+	font-style: italic;
+}
+
+/* simul */
+#archiv_simul .s_obrana, #archiv_simul .s_utok .s_cs, #archiv_simul .obrana {
+	color: white;
+}
+#archiv_simul .s_utok, #archiv_simul .s_obrana .s_cs, #archiv_simul .utok {
+	color: #FFFF00;
+}
+#archiv_simul .ramec {
+	background-color: #8081FF;
+	border: 1px solid #191970;
+	padding: 0px;
+	margin: 0px;
+	/*width: 760px;*/
+	width: 960px;
+	color: silver;
+}
+#archiv_simul .kolo {
+	/*width: 190px;*/
+	width: 240px;
+	float: left;
+	text-align: center;
+	font-size: 9px;
+	padding-top: 10px;
+}
+#archiv_simul .s_utok, #archiv_simul .s_obrana, #archiv_simul .utok, #archiv_simul .obrana {
+	margin-bottom: 10px;
+}
+#archiv_simul .cs, #archiv_simul .s_cs {
+	font-style: italic;
+}
+
+
+
+
+

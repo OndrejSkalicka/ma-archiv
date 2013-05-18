@@ -1,0 +1,41 @@
+/* vykresleni branky */
+#archiv_detail .branka {
+	background-color: #8081FF;
+	border: 1px solid #191970;
+	padding: 0px;
+	margin: 0px;
+	/*width: 760px;*/
+	width: 960px;
+	color: silver;
+}
+#archiv_detail .kolo {
+	/*width: 190px;*/
+	width: 240px;
+	float: left;
+	text-align: center;
+	font-size: 9px;
+	padding-top: 10px;
+}
+
+#archiv_detail .hospodareni {
+	width: 473px;
+	float: left;
+	background-color: #8081FF;
+	border: 1px solid #191970;
+	font-size: 10px;
+	margin: 10px 0px 0px 0px;
+}
+#archiv_detail .obecneInfo {
+	width: 473px;
+	background-color: #8081FF;
+	border: 1px solid #191970;
+	margin: 0px 0px 10px 0px;
+}
+
+
+
+
+
+#archiv_detail .hospodareni_space {
+	margin-left: 11px;
+}

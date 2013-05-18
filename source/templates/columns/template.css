@@ -1,0 +1,58 @@
+/* vykresleni branky */
+#archiv_detail .leftColumn {
+	float: left;
+	width: 475px;
+}
+#archiv_detail .rightColumn {
+	float: left;
+	width: 475px;
+	margin: 0px 0px 0px 10px;
+}
+
+#archiv_detail .branka {
+	background-color: #8081FF;
+	border: 1px solid #191970;
+	padding: 0px;
+	margin: 0px;
+	/*width: 760px;*/
+	width: 473px;_width: 473px;
+	color: silver;
+}
+#archiv_detail .branka hr {
+	margin: 0px 7px 0px 7px;
+}
+#archiv_detail .kolo {
+	/*width: 190px;*/
+	/*width: 224px;*/
+	width: 219px;
+	float: left;
+	text-align: center;
+	font-size: 9px;
+	padding-top: 10px;
+}
+#archiv_detail .kolo_space {
+	margin-left: 10px;
+}
+#archiv_detail .hospodareni {
+	width: 473px;
+	background-color: #8081FF;
+	border: 1px solid #191970;
+	font-size: 10px;
+	margin: 10px 0px 0px 0px;
+}
+#archiv_detail .obecneInfo {
+	width: 473px;
+	background-color: #8081FF;
+	border: 1px solid #191970;
+	margin: 0px 0px 10px 0px;
+}
+#archiv_detail .cisloKola {
+	margin: 0px 0px 5px 0px;
+}
+#archiv_detail hr {
+	color: #191970;
+	height: 0px;
+}
+
+
+

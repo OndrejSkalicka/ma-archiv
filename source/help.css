@@ -1,0 +1,40 @@
+/* editable */
+.helpclick {
+	color: red;
+	text-decoration: none;
+	font-size: 12px;
+	cursor: pointer; 
+}
+.help {
+	width: 300px;
+	border: 1px solid Navy;
+	background: #AEB7FF;
+	font-size: 11px;
+	font-family: Verdana;
+	padding: 2px;
+}
+.helpnadpis {
+	border: 1px solid Navy;
+	background: #6495ED;
+	font-weight: bold;
+	font-size: 13px;
+	font-family: Verdana;
+}
+/* dont change these */
+.helpclick {
+}
+.help {
+	z-index: 1;
+	display: none;
+	position: absolute;
+	text-align: left;
+}
+.helpnadpis {
+	padding: 3px;
+	margin: 0px;
+}
+.helpclosebutton {
+	margin: 4px; 
+	cursor: pointer; 
+	float: left;
+}
